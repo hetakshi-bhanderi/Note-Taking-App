@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Note Taking App</title>
+</head>
+<body>
+    <!-- Main -->
+    <div class="container">
+        <h2>Note Taking App</h2>
+        <textarea id="noteInput" placeholder="Write here....."></textarea>
+        <button class="add-btn" onclick="addNote()">Add Note</button>
+        <div id="notesContainer"></div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal-bg" id="modalBg"></div>
+    <div class="modal" id="editModal">
+        <h3>Edit Note</h3>
+        <input type="text" id="editNoteInput">
+        <button class="edit-btn" onclick="saveEdit()">Save</button>
+        <button class="delete-btn" onclick="closeModal()">Cancel</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
